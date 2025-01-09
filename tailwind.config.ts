@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        main_bg: "#F2CEDA",
+        btn_color: "#D23166",
+        text_color: "#150101",
+      },
+    },
+    container: {
+      center: true,
+      screens: {
+        lg: "1157px",
       },
     },
   },
