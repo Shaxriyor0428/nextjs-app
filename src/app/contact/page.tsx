@@ -1,10 +1,13 @@
-"use client";
+import { Metadata } from "next";
 import React, { FormEvent } from "react";
 
+export const metadata: Metadata = {
+  title: "Contact us",
+  description: "Contact us app page",
+};
+
 const ContactPage = () => {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
+
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-xl px-4">
@@ -12,7 +15,7 @@ const ContactPage = () => {
           Have Question in Mind?
         </h2>
         <p className="text-center mb-8">Let us help you</p>
-        <form action={"#"} onSubmit={handleSubmit} className="space-y-4">
+        <form action={"#"} className="space-y-4">
           <div className="flex space-x-4">
             <input
               type="tel"
